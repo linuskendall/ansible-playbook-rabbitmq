@@ -23,7 +23,7 @@
       dest: "{{ rabbitmq_conf_ssl_options_keyfile }}"
     - src: "{{ rabbitmq_server_cert }}"
       dest: "{{ rabbitmq_conf_ssl_options_certfile }}"
-  when: rabbitmq_ssl
+  when: rabbitmq_ssl and rabbitmq_ssl_copy_certs
 
 - name: generate the configuration of rabbitmq
   template:
