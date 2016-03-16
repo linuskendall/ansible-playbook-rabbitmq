@@ -22,6 +22,7 @@ rabbitmq_cacert     : "files/rabbitmq_cacert.pem"
 rabbitmq_server_key : "files/rabbitmq_server_key.pem"
 rabbitmq_server_cert: "files/rabbitmq_server_cert.pem"
 rabbitmq_ssl        : true
+rabbitmq_copy_certs : true
 
 # ######################
 # RabbitMQ Configuration
